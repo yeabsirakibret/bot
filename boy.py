@@ -11,6 +11,7 @@ def bop(bot, update):
     url = get_url()
     chat_id = update.message.chat_id
     bot.send_photo(chat_id=chat_id, photo=url)
+    bot.send_message(chat_id=chat_id,text="here is your dog!")
     print(chat_id,url)
 
 def main():
